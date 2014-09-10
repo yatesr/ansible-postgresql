@@ -1,0 +1,7 @@
+- name: Install postgresql (RedHat)
+  yum: name={{item}}
+       state=present
+  with_items:
+   - postgresql-server
+   - postgresql
+   - python-psycopg2
